@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshOrganics - Pure & Direct Organic Delivery</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f6ffe6 0%, #faf6ff 100%);
+            color: #2e4635;
+        }
+        header {
+            background: linear-gradient(90deg, #98ffb3 0%, #dcffd9 100%);
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(64,128,64,0.15);
+        }
+        header img {
+            height: 44px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #25603b;
+            margin-left: 2rem;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 2rem 2rem 2rem;
+            background: linear-gradient(135deg, #faffed 60%, #e8f8f5 100%);
+        }
+        .hero-text {
+            flex: 1;
+            min-width: 320px;
+        }
+        .hero-image img {
+            width: 320px;
+            border-radius: 22px;
+            box-shadow: 0 4px 18px rgba(100,200,100,0.2);
+        }
+        h1 {
+            font-size: 2.7rem;
+            margin: 0.7rem 0;
+        }
+        h2 {
+            color: #3b6d47;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 1200px;
+            background: #fcfff7;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(64,128,64,0.07);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: linear-gradient(135deg, #e6ffe9 0%, #fcfff7 90%);
+            border-radius: 13px;
+            box-shadow: 0 1.5px 6px rgba(64,128,64,0.1);
+            padding: 1.2rem;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 10px 20px rgba(105,190,105,0.15);
+        }
+        .product-img {
+            max-width: 96%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .gains-losses {
+            background: #e9fce6;
+            padding: 1rem 1.5rem;
+            border-radius: 11px;
+            margin: 0.5rem 0 1.2rem 0;
+            font-size: 1rem;
+        }
+        .order-info {
+            background: linear-gradient(90deg, #f2fff6 60%, #ddebe3 100%);
+            border-left: 7px solid #7dd873;
+            padding: 1rem 2rem;
+            margin: 2rem 0;
+            border-radius: 11px;
+            font-size: 1.1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem 0 1rem 0;
+            font-size: 0.97rem;
+            background: #e8fde4;
+            color: #2e4635;
+            border-radius: 0 0 17px 17px;
+        }
+        @media (max-width: 700px) {
+            .hero {
+                flex-direction: column;
+            }
+            .hero-image img {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.bing.com/th/id/OIP.FKY-NdUClJG8RCzRf4c9cQAAAA?w=181&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="FreshOrganics Logo" width="110px" >
+        <nav>
+            <a href="#organic-farming">Organic Farming</a>
+            <a href="#products">Products</a>
+            <a href="#delivery">Delivery</a>
+            <a href="#research">Research</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Pure. Fresh. Direct from Farm.</h1>
+            <p>Discover the health and environmental benefits of organic farming. Buy organic vegetables and fruits, safely delivered to your doorstep—fresh from local farmers, ensuring pure quality and hygiene in every supply.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=650&q=80" alt="Organic vegetables basket">
+        </div>
+    </section>
+    <section id="organic-farming">
+        <h2>Why Organic Farming?</h2>
+        <ul>
+            <li>Builds fertile, healthy soil and protects water quality[web:5]</li>
+            <li>Promotes biodiversity and eco-friendly pest control[web:5][web:17]</li>
+            <li>Reduces pesticide exposure and chemical residues on food[web:3][web:17]</li>
+            <li>Supports sustainable livelihoods for local farmers[web:5][web:20]</li>
+            <li>Encourages crop diversity, breaking pest disease cycles naturally[web:5]</li>
+            <li>Organic produce often contains higher levels of antioxidants and essential nutrients[web:17]</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=900&q=80" alt="Organic Farm Field" style="width:100%;max-width:560px;display:block;margin:2rem auto 0 auto;border-radius:16px;">
+    </section>
+    <section id="products">
+        <h2>Featured Organic Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img class="product-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Organic Avocado">
+                <h3>Avocado</h3>
+                <div class="gains-losses">
+                    <strong>Gains:</strong> Rich in fiber, potassium, healthy fats, and antioxidants. Supports heart and bone health, aids in cholesterol management[web:7][web:16].<br>
+                    <strong>Losses:</strong> May increase body heat if consumed in excess[web:16]. Avoid high intake in hot climates.
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=400&q=80" alt="Organic Tomatoes">
+                <h3>Tomatoes</h3>
+                <div class="gains-losses">
+                    <strong>Gains:</strong> High in lycopene, Vitamin C; supports immunity; promotes heart health.<br>
+                    <strong>Losses:</strong> Can be acidic, might not suit sensitive stomachs.
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="Organic Carrots">
+                <h3>Carrots</h3>
+                <div class="gains-losses">
+                    <strong>Gains:</strong> High Vitamin A, supports vision, immune system, skin health.<br>
+                    <strong>Losses:</strong> Possible orange tint to skin with very high intake (rare).
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://images.unsplash.com/photo-1437750769465-301382cdf094?auto=format&fit=crop&w=400&q=80" alt="Organic Cucumbers">
+                <h3>Cucumbers</h3>
+                <div class="gains-losses">
+                    <strong>Gains:</strong> Hydrating, low calorie, source of Vitamin K.<br>
+                    <strong>Losses:</strong> Mildly cold for some; not suitable for people with kidney issues in excess.
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?auto=format&fit=crop&w=400&q=80" alt="Organic Bananas">
+                <h3>Bananas</h3>
+                <div class="gains-losses">
+                    <strong>Gains:</strong> Good energy food, rich in potassium and Vitamin B6.<br>
+                    <strong>Losses:</strong> High sugar, moderation for diabetics.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="delivery">
+        <h2>Home Delivery: Pure, Hygienic & Fresh</h2>
+        <div class="order-info">
+            <ul>
+                <li>100% organic produce, supplied directly from certified local farmers[web:5][web:11].</li>
+                <li>Strict quality control and hygiene in every step, from harvest to packaging[web:5][web:17].</li>
+                <li>Sealed, sanitized packaging—retaining freshness and nutrients at delivery.</li>
+                <li>Traceable: Know your farmer, know your food.</li>
+                <li>Easy website ordering, reliable and prompt doorstep delivery.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="research">
+        <h2>Organic Foods Research</h2>
+        <ul>
+            <li>Organic foods may have higher levels of beneficial antioxidants[web:17].</li>
+            <li>Lower risk of pesticide residues and contamination[web:17].</li>
+            <li>Organic farming practices support biodiversity and environmentally friendly food systems[web:3][web:14].</li>
+            <li>Recent research links organic food consumption with improved health, including reduced allergies and stronger immunity[web:17][web:5].</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d?auto=format&fit=crop&w=800&q=80" alt="Organic Foods Research" style="width:100%;max-width:610px;display:block;margin:2rem auto 0 auto;border-radius:16px;">
+    </section>
+    <footer>
+        &copy; 2025 FreshOrganics. For educational use. Imagery courtesy Unsplash.<br>
+        <a href="#" style="color:#3ebd6b;">Contact Us</a>
+    </footer>
+</body>
+</html>
